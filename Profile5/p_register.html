@@ -1,0 +1,186 @@
+<!DOCTYPE.html>
+<html>
+<script type="text/javascript" src="http://code.jQuery.com/jQuery-1.7.2.min.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+<title>Create profile</title>
+<style>
+html, body, div, p, a, ul, li, header, menu {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+body{
+     background-color: #000000;
+     color: #ffffff;
+     font-size: 11px;
+     line-height: 20px;
+     width: 100%;
+}
+#register{
+	 background-image: url("pic/bg.png");
+	 background-position: center top;
+	 height: 1495px;
+	 width: 100%;
+}
+.header{
+	margin-left: auto;
+	margin-right: auto;
+	width: 975px;
+	position: top;
+}
+.header a{
+	  background-position: left top;
+	  background-repeat: no-repeat;
+} 
+.header a.logo{
+	background-image: url("pic/logo.png");
+	display: block;
+	float: left;
+	height: 38px;
+	padding-left: 92px;
+	padding-top: 27px;
+	width: 170px;
+}	
+.header a.Login {
+    background-image: url("pic/logout.png");
+    display: block;
+    float: right;
+    height: 15px;
+    margin-right: 18px;
+    margin-top: 25px;
+    padding-left: 23px;
+    width: 42px;
+}
+
+
+a {
+    color: #ffffff;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+strong {
+	font-size: 16px;
+}
+h {
+   font-size: 40px;
+}
+.regis {
+	padding-top: 120px;	
+	padding-left: 155px;
+}
+#tb {
+margin-top: 40px;
+}
+p {
+margin-top: 30px;
+color: #01dfd7;
+}
+p2 {
+font-size: 25px;
+}
+</style>
+
+<body>
+<div id="register">
+	<div class="header">
+	   <a class="logo">Create your profile</a>
+	   <a class="Login" href="login.html">Login</a>
+	</div>
+        <div class="regis">	
+	   <h> Create your profile</h>
+	   <table name="tb" method="POST" action="RegisServlet"> 
+	      <tr>
+		 <td>
+		   <p>Name</p> <input name="name" type="text" size="15"
+				placeholder="First Name" id="txtName">
+			       <input name="last" type="text" size="15"
+				placeholder="Last Name" id="txtLast">	
+		 </td> 
+  	      </tr>	
+	      <tr> 
+		<td>
+		  <p>User ID</p> <input name="userid" type="text" size="15"
+				  id="txtId">
+		</td>
+	      </tr>
+              <tr> 
+	        <td>
+		  <p>Password</p> <input name="password" type="text" size="15"
+				   id="txtPass">
+		</td>
+	      </tr>
+	      <tr> 
+		<td>
+		<p2>Please browse your image.</p2>
+		</td> 
+	      </tr> 
+	      <tr>
+		<td>
+		  <p>About me</p> <textarea name="about" cols="50" rows="5"
+				    id="txtAbout">
+Enter your profile here...
+				  </textarea><br>
+				  <input type="file"/> 
+		</td>
+	      </tr>           
+	      <tr>
+                <td>
+                  <p>Where you see me?</p> <textarea name="location" cols="50"
+					  rows="5" id="txtWhere">
+Enter your location here...
+                                  </textarea><br>
+                                  <input type="file"/>                          </td>
+              </tr>
+	      <tr>
+                <td>
+                  <p>How to contact me?</p> <textarea name="contact" cols="50" 
+						 rows="5" id="txtContact">
+Enter your contact here...
+                                  </textarea><br>
+                                  <input type="file"/>                          </td>
+              </tr>
+              <tr>	
+                <td>
+                 <p>Education</p> <textarea name="education" cols="50" rows="5"
+					id="txtEducation">
+Enter your education here...
+                                  </textarea><br>
+                                  <input type="file" />                          </td>
+              </tr>
+	      <tr>
+		<td>
+		  <input type="Sibmit" value="Create your profile"
+		    onClick="function Add()" 
+		  style="margin-top: 40px;"> 
+		</td>
+	      </tr> 
+	  </table>
+	</div>
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
